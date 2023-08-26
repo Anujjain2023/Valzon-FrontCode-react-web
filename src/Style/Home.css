@@ -1,0 +1,145 @@
+
+.dyn-div{
+
+    z-index: 1;
+    top: -30px;
+    border-radius: 20%;
+    
+ }
+ .dyn-img{
+     height: 90vh;
+     width: 100%;
+     border-radius: 3%;
+ 
+ }
+ .slide-main{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2%;
+  background-color: rgb(160, 224, 203);
+ }
+ .slide-sub1{
+  width: 63%;
+ }
+.slide-sub2{
+  width: 35%;
+  height: 105vh;
+
+}
+
+.cart3-after-slider-main{
+  --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 4.2%;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.cart3-after-slider-sub1{
+  background-color: rgb(228, 228, 228);
+    border-radius: 3%;
+    width: 27%;
+    padding: 2%;
+    height: 50vh;
+    margin: 1.13%;
+}
+.cart3-undersub1 .cart3-text{
+ 
+  position: relative;
+ margin-right: -8%;
+  z-index: 2;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.cart3-undersub1{
+  display: flex;
+  justify-content: space-between;
+}
+.cart3-text{
+  color: black;
+}
+.cart3-undersub1 img{
+   height: 30vh;
+}
+.cart3-undersub1 img:hover{
+  width: 110%;
+  height: 33vh;
+}
+.shop-now{
+  background-color: rgb(22 211 101);
+  color: white;
+  padding: 1%;
+  
+}
+
+.media-main{
+  background-color: rgb(183, 250, 135);
+  display: flex;
+  justify-content: space-between;
+}
+.media1{
+  width: 33%;
+  padding: 1%; 
+}
+.youtubee{
+  
+  width:"350px"
+}
+
+ @keyframes slide {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+}
+ 
+   @keyframes typing {
+     0% {
+       width: 0;
+     }
+     100% {
+       width: 40%;
+     }
+   }
+   
+  
+   
+  
+   .dynamic-text {
+     overflow: hidden;
+     white-space: nowrap;
+     z-index: 1;
+     font-size: 3em;
+     position: absolute;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     top: 280px;
+      color: white;
+      margin-left: 4%;
+     animation: typing 5s steps(20) infinite;
+   }
+   .run-text-p{
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 3em;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 330px;
+     color: rgb(218, 120, 120);
+     margin-left: 4%;
+    animation: typing 7s steps(20) infinite;
+  }
+  h1{
+   font-family:Georgia, 'Times New Roman', Times, serif;
+  }

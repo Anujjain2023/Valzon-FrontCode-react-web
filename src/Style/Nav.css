@@ -1,0 +1,185 @@
+
+body{
+  margin-top: 1%;
+}
+.up-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+}
+.number{
+  color: rgb(22, 167, 83);
+}
+.left-nav{
+  display: flex;
+  width: 30%;
+  align-items: center;
+
+  
+}
+.left-nav-img{
+   width: 22%;
+  padding: 1%;
+}
+
+
+.Second-Line-main-nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+.out-inp{
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: space-between;
+}
+.inp{
+  width: 60%;
+  border: 2px solid rgb(141, 186, 189);
+  box-shadow: 2px 2px 7px gray;
+  display: flex;
+}
+.inp button{
+  
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 1% 7%;
+  border: none;
+}
+.inp input{
+  width: 99%;
+  border: none;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position:fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  
+
+  }
+
+  .nav-main{
+    font-weight: bold;
+    box-sizing: content-box;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0% 3%;
+  }
+  .h2-cate{
+     background-color: rgb(22 211 101);
+     color: white;
+     border-radius: 5px;
+     font-size: 1.2em;
+     padding: 1%;
+  }
+  .h2-cate-sub{
+    display: none;
+  }
+  .main :hover .h2-cate-sub{
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    background-color: rgb(214, 100, 100);
+    margin-top: 5px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 2% 5%;
+ }
+
+  .right-icon-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22%;
+  }
+  .icon-user{
+    
+    align-items: center;
+  }
+  .h2-whatsapp{
+     color: rgb(22 211 101);
+     margin: auto;
+     font-size: 1.3em;
+  }
+
+  .whats-app{
+    font-size: 0.6em;
+    color: black;
+  }
+
+  
+ 
+  span:hover{
+    transform: scale(1.2);
+    color: white;
+    border-radius: 3px;   
+    z-index: 1;
+    background-color: rgb(10, 97, 147);
+  }
+
+  
+  .disp-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+.brand-nav ul, li{
+   text-decoration: none;
+   margin: 1px;
+   padding: 2px 11px;
+   list-style: none;
+   font-size: 0.8em;
+}
+.brand-sub-nav{
+  display: none;
+   padding: 0 -10px;
+}
+
+ .nav-main  :hover .brand-sub-nav{
+   display: block;
+   position: absolute;
+   opacity: 0.8;
+   background-color: rgb(117, 118, 118);
+   margin-top: 5px;
+   border-radius: 4%;
+}
+.nav-main  :hover .brand-sub-nav ul li{
+  border-bottom: 1px dotted rgb(66, 66, 66);
+}
+
+.mobile-togle{
+  display: none;
+}
+
+@media screen and (max-width: 580px)  {
+  body
+   .nav-main{
+    display: grid;
+    flex-direction: column;
+    
+    width: 60%;
+    background-color: rgb(56, 190, 85);
+   }
+   .disp-main{
+    display: flex;
+    flex-direction: column;
+   }
+   
+
+   .mobile-togle{
+    display: block;
+    
+   }
+ 
+}
