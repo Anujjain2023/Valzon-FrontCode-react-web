@@ -1,13 +1,7 @@
-.main-sign{
+.main-signn{
     background-color: rgb(198, 139, 88);
-   height: 1000px;
 }
-.sub-main-sign{
-    display: flex;
-    justify-content: space-evenly; 
-    margin: 0;
-    padding: 3%;
-}
+
 .text{
     width: 44%;
     float: right;
@@ -15,25 +9,25 @@
     margin: 3%;
     font-weight: bold;
 }
-
+.become-customer{
+    color:  rgb(56, 190, 85);
+}
 .formm{
     width: 42%;
     text-align: center;
     background-color: aliceblue;
     padding: 2%; 
-    margin: 2%;
+    margin: 1%;
     border-radius: 3%;
     box-shadow: 2px 4px 6px 2px rgb(124, 68, 68);
 
 }
-.text-form{
-    width: 42%;
-    text-align: center;
-    background-color: aliceblue;
-    padding: 2%;  
-    border-radius: 3%;
-    box-shadow: 2px 4px 6px 2px rgb(124, 68, 68);
-
+.inp-log-form{
+    border:1px solid rgb(211, 208, 208);
+    padding: 1.6%;
+    border-radius: 5px;
+    opacity:0.8 ;
+    width: 60%;
 }
 #fi-div{
     background-color: rgb(133, 185, 230);
@@ -45,6 +39,7 @@
     background-color: aquamarine;
     padding: 1% 4%;
     margin: 2%;
-    border-radius: 3%;
-
+    border-radius: 5px;
+    padding: 1% 3%;
+    border: none;
 }

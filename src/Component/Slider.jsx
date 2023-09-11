@@ -32,7 +32,7 @@ const SliderComponent = () => {
     backgroundRepeat: 'no-repeat', // Optional - to prevent the image from repeating
     // You can use other background properties here, like backgroundPosition, backgroundAttachment, etc.
     width: '500px', // Set the width of the div
-    height: '350px', // Set the height of the div
+   // Set the height of the div
   };
 
 

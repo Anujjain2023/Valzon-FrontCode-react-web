@@ -1,4 +1,4 @@
-import RedChili from "../Component/assets/RedChili.png"
+import RedChili from "../Component/assets/soya.png"
 import ChloroJuice from "../Component/assets/CHLOROPHYL_JUICE_-removebg.png"
 import DetergrntPowder from "../Component/assets/DETERGENT_POWDER_-removebg-preview.png"
  

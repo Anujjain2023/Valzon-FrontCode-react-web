@@ -41,9 +41,33 @@ const Navbar = () => {
     setToggle(!toggle)
     console.log("gfyry6ry");
   }
-  const login = () => {
-    navigate("/login")
+  const loginpage = () => {
+    navigate("/sign/login")
   }
+  const signpage =()=>{
+
+  }
+
+  const housecleaning =()=>{
+    navigate("/housecleaning")
+  }
+  const personalcare= ()=>{
+    navigate("/personalcare")
+  }
+  const wellnessproduct =()=>{
+     navigate("/wellness") 
+
+  }
+   const poojaneed =()=>{
+    navigate("/pooja")
+   }
+   const kitchencare = ()=>{
+     navigate("/kitchen")
+     
+   }
+   const videogalary = ()=>{
+    navigate("/galary/vid")
+   }
 
   return (
     <div>
@@ -70,7 +94,15 @@ const Navbar = () => {
           <div className='right-icon-user'>
             <span className='icon-user' > <PersonIcon /> <span>User</span> </span>
             <span className='icon-user'> <ShoppingCartIcon />  Cart</span>
-            <span className='icon-user'>  <AccountCircleIcon />  Account</span>
+            <span className='icon-user'>  <AccountCircleIcon />  Account
+            <div className='brand-sub-nav'>
+            <ul onClick={clickkk}>
+              <li>I'm</li>
+              <li>LogIn</li>
+              <li>SignOut</li>
+s            </ul>
+          </div>
+            </span>
           </div>
         </div>
 
@@ -80,11 +112,11 @@ const Navbar = () => {
       <div className='main'>
         <h3 className='h2-cate'>All-Categories
         <ul onClick={clickkk} className='h2-cate-sub'>
-        <li>KITCHEN & HOUSE-CLEANING</li>
-        <li>KITCHEN CARE</li>
-        <li>PERSONAL CARE</li>
-        <li>POOJA NEED</li>
-        <li>WELLNESS PRODUCT</li>
+        <li  className='h2-hover-prd'  onClick={housecleaning} >KITCHEN & HOUSE-CLEANING</li>
+        <li className='h2-hover-prd'  onClick={kitchencare} >KITCHEN CARE</li>
+        <li className='h2-hover-prd'  onClick={personalcare} >PERSONAL CARE</li>
+        <li  className='h2-hover-prd' onClick={poojaneed} >POOJA NEED</li>
+        <li  className='h2-hover-prd' onClick={wellnessproduct} >WELLNESS PRODUCT</li>
         </ul>
         </h3>
         <div className={toggle ? " nav-main  mobile-togle" : "nav-main"} >
@@ -106,16 +138,16 @@ const Navbar = () => {
             <div className='brand-sub-nav'>
               <ul >
                 <li>Photos</li>
-                <li> Videos</li>
+               <li onClick={videogalary}> Videos</li>
               </ul>
             </div>
           </span>
           <span className='contact-nav' onClick={NavCon}>Contact</span>
           <span className='sign-nav' onClick={NavSign}>Account
             <div className='brand-sub-nav'>
-              <ul >
-                <li onClick={login} >LogIn</li>
-                <li> SignUp</li>
+              <ul>
+                <li onClick={loginpage} >LogIn</li>
+                <li onClick={signpage}> SignUp</li>
               </ul>
             </div>
 

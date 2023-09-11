@@ -1,21 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "../Style/Contact.css"
-import imgg from "../Component/assets/yellow-back1.jpg"
  import CustomerPic from "../Component/assets/CustomerPic.webp"
 import { borderRadius } from '@mui/system'
 const Contact = () => {
-
-  const background={
-      backgroundImage: `url(${imgg})`,
-      backgroundSize: 'cover',// Optional - to scale the image to cover the entire div
-      backgroundRepeat: 'no-repeat', // Optional - to prevent the image from repeating
-      // You can use other background properties here, like backgroundPosition, backgroundAttachment, etc.
-      width: `94%`,
-      height: `300px`,
-      borderRadius: `3%`,
- 
-  }
 
   return (
     <div >
@@ -59,22 +47,22 @@ const Contact = () => {
            <div className='form-sub'>
             <form action=''>
               <label htmlFor='name'>Name*</label><br />
-              <input type='text' id='name' placeholder='Name' required /><br />
+              <input className='inp-cont-form' type='text' id='name' placeholder='Name' required /><br />
 
               <label htmlFor='email'>Email*</label><br />
-              <input type='email' id='email' placeholder='Email' required /><br />
+              <input className='inp-cont-form' type='email' id='email' placeholder='Email' required /><br />
 
               <label htmlFor='number'>Mobile No. *</label><br />
-              <input type='number' id='number' placeholder='Mobile Number' required /><br />
+              <input className='inp-cont-form' type='number' id='number' placeholder='Mobile Number' required /><br />
 
               <label htmlFor='user'>UserId/Retail Order Number</label><br />
-              <input type='text' id='user' placeholder='UserId/Retail Order Number' /><br />
+              <input className='inp-cont-form' type='text' id='user' placeholder='UserId/Retail Order Number' /><br />
 
               <label htmlFor='subject'>Subject</label><br />
-              <input type='text' id='subject' placeholder='Subject' /><br />
+              <input className='inp-cont-form' type='text' id='subject' placeholder='Subject' /><br />
               
               <label htmlFor='message'>Drop Message</label><br />
-              <input type='text' id='message' placeholder='Drop Message' /><br />
+              <textarea className='inp-cont-form' id='message' placeholder='Drop Message' /><br />
 
               <button type='submit' className='btnn' >Submit</button>
             </form>
@@ -84,17 +72,6 @@ const Contact = () => {
           </div>
 
         </div>
-      </div>
-
-      <div className='back-img' style={background} >
-         <div className='sec-back-img-head-text'>People, Products and Planet <div style={{ color: "rgb(22, 249, 116)" }}>Our CSR</div></div>
-         <div>Safe Shop has chosen to prefix the selfless 'OUR'</div>
-         <div className='email-responce-k-uper'>when partnering for social initiatives Our People, Our Products & Our Planet.</div>
-
-         <div className='email'>
-          <input type='email' id='submit-email' placeholder='Your email address' />
-          <button type='submit'className='btnnn'  > Subscribe </button>
-         </div>
       </div>
 
     </div>

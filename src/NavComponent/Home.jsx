@@ -29,13 +29,16 @@ const Home = () => {
          { detail && detail.map ((i)=>{
             return(
               <div className='cart3-after-slider-sub1'>
-          <div className='cart3-undersub1'>
+         
             <div className='cart3-img-k-phle'>
               <img src={i.imgsrc} alt='err' width="100%" />
-              <div className='cart3-text'>{i.heading}</div>
-            </div>
-          </div><br />
-          <span className='shop-now'>Shop Now</span>
+              </div>
+              <div className='cart3-text'>{i.heading}
+               <br/>
+               <br/>
+              <span className='shop-now'>Shop Now</span>
+              </div>
+           
 
         </div>
             )

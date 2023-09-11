@@ -9,19 +9,39 @@ import Galary from './NavComponent/Galary'
 import News from './NavComponent/News'
 import Signup from './NavComponent/Signup'
 import Login from './NavComponent/Login'
+import Personalcare from './ProductCategory/Personalcare'
+import Kitchen from './ProductCategory/Kitchen'
+import HouseCleaning from './ProductCategory/HouseCleaning'
+import Pooja from './ProductCategory/Pooja'
+import Welness from './ProductCategory/Welness'
+import Video from './NavComponent/Video'
+
+
 const Routee = () => {
   return (
     <div>
      <Routes>
        <Route path='/' element = {<Home/>} />
        <Route path='contact' element = {<Contact/>} />
-       <Route path='brand' element = {<Brand/>} />
-       <Route path="product" element = {<Product/>} />
-       <Route path="company" element = {<Company/>} />
-       <Route path="galary" element = {<Galary/>} />
-       <Route path="news" element = {<News/>} />
-       <Route path="sign" element = {<Signup/>} />
+       <Route path='/brand' element = {<Brand/>} />
+       <Route path="/product" element = {<Product/>} />
+       <Route path="/company" element = {<Company/>} />
+       <Route path="/galary/" element = {<Galary/>}> 
+       <Route path='vid' element = {<Video/>} />
+       </Route>
+
+      
+       <Route path="/news" element = {<News/>} />
+       <Route path="/sign/" element = {<Signup/>} >
        <Route path='login' element = {<Login/>} />
+       </Route>
+       
+       <Route path='/personalcare' element = {<Personalcare/>} />
+       <Route path='/kitchen' element = {<Kitchen/>} />
+       <Route path='/housecleaning' element = {<HouseCleaning/>} />
+       <Route path='/pooja' element = {<Pooja/>} />
+       <Route path='/wellness' element = {<Welness/>} />
+       
      </Routes>
     </div>
   )

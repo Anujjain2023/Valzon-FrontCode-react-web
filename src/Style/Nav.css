@@ -56,13 +56,14 @@ body{
 .main{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  position:fixed;
+  position: sticky;
+  position: relative;
+  top: 0px;
   width: 100%;
   background-color: white;
-  z-index: 2;
-  
-
+  z-index: 7;
   }
 
   .nav-main{
@@ -80,20 +81,28 @@ body{
      border-radius: 5px;
      font-size: 1.2em;
      padding: 1%;
+     cursor:pointer;
   }
   .h2-cate-sub{
     display: none;
   }
-  .main :hover .h2-cate-sub{
+  .main :hover .h2-cate-sub {
     display: block;
     position: absolute;
+    transition: 0.6s;
     opacity: 0.8;
-    background-color: rgb(214, 100, 100);
+    background-color: rgb(117, 118, 118);
     margin-top: 5px;
     z-index: 2;
     border-radius: 10px;
-    padding: 2% 5%;
+    padding: 2% ;
+    cursor: pointer;
  }
+ 
+ .all-cate-all-prd{
+
+ }
+
 
   .right-icon-user{
     display: flex;
@@ -119,25 +128,22 @@ body{
   
  
   span:hover{
+    transition: 0.6s;
     transform: scale(1.2);
     color: white;
     border-radius: 3px;   
     z-index: 1;
+    cursor: pointer;
     background-color: rgb(10, 97, 147);
   }
 
   
-  .disp-main{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-}
+
 
 .brand-nav ul, li{
    text-decoration: none;
    margin: 1px;
-   padding: 2px 11px;
+   padding: 2px 5px;
    list-style: none;
    font-size: 0.8em;
 }
@@ -146,12 +152,13 @@ body{
    padding: 0 -10px;
 }
 
- .nav-main  :hover .brand-sub-nav{
+.nav-main :hover .brand-sub-nav{
    display: block;
    position: absolute;
    opacity: 0.8;
    background-color: rgb(117, 118, 118);
-   margin-top: 5px;
+   margin-top: 2px;
+   margin-left: 4px;
    border-radius: 4%;
 }
 .nav-main  :hover .brand-sub-nav ul li{
@@ -163,7 +170,7 @@ body{
 }
 
 @media screen and (max-width: 580px)  {
-  body
+ 
    .nav-main{
     display: grid;
     flex-direction: column;
@@ -183,3 +190,4 @@ body{
    }
  
 }
+

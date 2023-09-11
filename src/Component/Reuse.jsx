@@ -6,9 +6,9 @@ const Reuse = (props) => {
     <div className='re-main'>
     
       <div className='img-ke-phle'><img src={props.image}  width="100%" /> </div>
-      <h2>{props.category}</h2>
-      <span className='btn' >Price: RS{props.price}/-</span>
-      <button className='btn' >{}</button>
+      <h2 className='h2-des'>{props.category}</h2>
+      <button className='btn-reuse' >Price: RS{props.price}/-</button>
+      <button className='btn-reuse' >{}</button>
     </div>
   )
 }
