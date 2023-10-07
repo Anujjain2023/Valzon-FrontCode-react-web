@@ -1,20 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import  { BrowserRouter } from 'react-router-dom'
-import ApiiData from './Component/ApiiData';
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" 
-rel="stylesheet"></link>
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import ApiiData from "./Component/ApiiData";
+import "bootstrap/dist/css/bootstrap.min.css";
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+  rel="stylesheet"
+></link>;
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   <BrowserRouter>
-   <ApiiData>
-   <App />
-   </ApiiData>
-   </BrowserRouter>
+    <BrowserRouter>
+      <ApiiData>
+        <App />
+      </ApiiData>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

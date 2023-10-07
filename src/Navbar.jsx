@@ -17,6 +17,8 @@ import BorderOuterIcon from '@mui/icons-material/BorderOuter';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(true)
   const navigate = useNavigate()
@@ -130,30 +132,26 @@ const Navbar = () => {
             <input type='text' placeholder="Search For Products" /> 
           </div>
           <div className='right-icon-user'>
-           <span className='icon-user' onClick={clickuser}> <PersonIcon /> User   
-              <span className='user-ul'>
-                <li>
-                 <span>New Customer?  </span>
-                 <span style={{color:"#13ACA7"}}>   Sign UP</span>
-                </li>
-                <li> 
-                <PersonIcon />
-                 <span>My Profile</span>
-                </li>
-                <li> 
-                 <BorderOuterIcon/>
-                 <span>Order</span>
-                </li>
-                <li> 
-                <FavoriteBorderIcon/>
-                 <span>WishList</span>
-                </li>
-                <li> 
-                <InventoryIcon/>
-                <span>Reward</span>
-               </li>
+            <span className='icon-user'>
+            <PersonIcon />
+
+          <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="User"
+              menuVariant="light"
+              >
+              <NavDropdown.Item href="#action/3.1">  <PersonIcon /> My Profile</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+              <BorderOuterIcon/> Order
+              </NavDropdown.Item>
+              <NavDropdown.Item><FavoriteBorderIcon/> Wishlist</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3"><InventoryIcon/>  Reward</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+              New Customer? <span>Sign Up</span>
+              </NavDropdown.Item>
+            </NavDropdown>
               </span>
-              </span> 
               <span  onClick={cartClickk} className='icon-user'> <ShoppingCartIcon />  Cart</span>
            <span className='t3dots-icon'><MoreVertIcon/></span> 
           </div>

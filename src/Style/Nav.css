@@ -105,7 +105,6 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 40%;
-    animation: slideLeft 1.6s ease forwards;
 
   }
   @keyframes slideLeft{
@@ -133,38 +132,14 @@ body{
      z-index: 55;
 
   }
-  /* .icon-user:hover{
+  .icon-user:hover{
     color: white; 
     background-color: #13ACA7; 
     padding: 1.1%;
     cursor: pointer;
     border-radius: 5px;
 
-  }  */
-
-.icon-user>.user-ul:hover{
-  display:block;
-  position:absolute;
-  top: 31px;
-  background-color: white;
-  box-shadow: 1px 1px 5px 1px gray;
-  right: 33.5%;
-  width: 56%;
-}
-.user-li{
-  display: flex;
-  justify-content: space-between;
-}
-.user-ul li{
-  padding: 3%;
-  display: flex;
-  font-size: 1.2em;
-  display: none;
-}
-.icon-user:hover li{
-  display: flex;
-  color: black;
-}
+  } 
 .mobile-togle{
   display: none;
 }
