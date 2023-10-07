@@ -1,14 +1,31 @@
 import React, { useState } from 'react'
 import "../Style/Sign.css"
-
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Outlet } from 'react-router-dom';
 
 
 const Signup = () => {
-  const [d, setD] = useState({})
-  const changed = (e) => {
-    e.target.value()
-  }
+  const [d, setD] = useState({
+    name: "",
+    email:'',
+    phone: "",
+    address :"",
+    password :""
+  })
 
+  const changed = (e) => {
+    setD({...d,[e.target.name]: e.target.value})
+  }
+const submitdata=(e)=>{
+  e.preventDefault();
+  console.log(d);
+  toast("login Succrsss")
+  axios.post("http://localhost:8000/register",d)
+  
+
+}
   const signup = () => {
 
   }
@@ -26,6 +43,7 @@ const Signup = () => {
 
   return (
     <div className='main-signn' >
+    <Outlet/>
       <div className='sub-main-sign' style={myStyle}>
       <div className='dynamic-text'>Welcome to Valzon....
       <br></br> </div>
@@ -38,20 +56,30 @@ const Signup = () => {
        <span className='become-customer'>Become a customer?</span><br/><br/>
           <form action='#'><h2> Login </h2>
 
-            <label htmlFor='name'>LogID/Email</label>
-            <input className='inp-log-form' type='text' id='name' name='fname' value={d.name} placeholder='Enter your Id/Email' onChange={changed} /> <br></br><br></br>
+            <label htmlFor='name'>Name</label>
+            <input required className='inp-log-form' type='text' id='name' name='name' placeholder='Enter your Name' onChange={changed} autoComplete='offf' /> <br></br><br></br>
+
+            <label htmlFor='name'>Email</label>
+            <input className='inp-log-form' type='email' id='email' name='email'  placeholder='Enter your Id/Email' onChange={changed} /> <br></br><br></br>
+
+            <label htmlFor='name'>Pnone</label>
+            <input className='inp-log-form' type='number' id='phone' name='phone' placeholder='Enter your Id/Email' onChange={changed} /> <br></br><br></br>
+
+            <label htmlFor='name'>Address</label>
+            <input className='inp-log-form' type='text' id='address' name='address' placeholder='Enter your Id/Email' onChange={changed} /> <br></br><br></br>
 
             <label htmlFor='pass' >Password</label>
-            <input className='inp-log-form' type='password' id='pass' name='pass' value={d.pass} placeholder='Enter password ' onChange={changed} /> <br></br><br></br>
+            <input className='inp-log-form' type='password' id='password' name='password'  placeholder='Enter password ' onChange={changed} /> <br></br><br></br>
 
             <input type="checkbox" id="Remember"   />
             <label for="Remember"> Remember me</label>    
             <span for="forgot" className='become-customer'>Forgot Password ? </span> <br/>   
-
-            <button className='btn' type='submit' >Sign Up</button> 
+              <button className='btn' type='submit' onClick={submitdata} >Sign Up</button> 
             <button className='btn' type='reset'  >Reset</button>
           </form> 
         </div>
+        <ToastContainer />
+      
       </div>
       
       )

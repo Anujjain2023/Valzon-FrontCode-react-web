@@ -16,6 +16,23 @@ import DetergrntPowder from "../Component/assets/DETERGENT_POWDER_-removebg-prev
       imgsrc : DetergrntPowder,
       heading : "A great contribution to your Daily Life",
      
-    }
+    }, {
+      imgsrc : DetergrntPowder,
+      heading : "A great contribution to your Daily Life",
+     
+    },{
+      imgsrc : ChloroJuice,
+      heading : "A great contribution to your health",
+    },
+     
+    //  {
+    //   imgsrc : DetergrntPowder,
+    //   heading : "A great contribution to your Daily Life",
+     
+    // },{
+    //   imgsrc : ChloroJuice,
+    //   heading : "A great contribution to your health",
+     
+    // }
   ]
   export default detail

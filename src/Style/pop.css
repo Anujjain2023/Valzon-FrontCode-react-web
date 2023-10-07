@@ -1,0 +1,28 @@
+.main-pop{
+    width: 30%;
+    top:25%;
+    height: auto;
+    z-index: 122; 
+    margin-left: 35%;    
+    position:absolute;
+   animation: slideBottom 1.5s ease backwards;
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.main-pop img{
+    width: 100%;
+}
+.cross{
+    position: relative;
+    top: 32px;
+    margin-left: 89%;
+    border: 2px solid rgb(56, 56, 151) ;
+}

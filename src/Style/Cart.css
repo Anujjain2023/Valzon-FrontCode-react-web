@@ -1,0 +1,55 @@
+.back-to-shop{
+    display: flex;
+   align-items: center;
+   padding: 1% 2%;
+
+}
+.heading-shop{
+    padding: 1% 2%;
+    font-size: 2em;
+}
+.heading-shop div{
+    padding: 1% 2%;
+}
+.cart-main{
+    background-color: aliceblue;
+    width: 80%;
+    margin: 5% 10%;
+}
+.item-main{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 5% 10%;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 1px gray;
+}
+.Product{
+    display: flex;
+    align-items: center;
+ width: 10%;
+}
+#quantity{
+    width: 20%;
+}
+.remove{
+    background-color: rgb(235, 63, 63);
+    color: white ;
+    border: none;
+    border-radius: 5px;
+    padding: 3% 2%;
+    cursor: pointer;
+}
+.remove:hover{
+    background-color: rgb(255, 1, 1);
+}
+.pay{
+    width: 30%;
+    margin-left : 70%
+}
+.pay-btn{
+    background-color: aquamarine;
+    border: none;
+    padding: 3% 5%;
+}

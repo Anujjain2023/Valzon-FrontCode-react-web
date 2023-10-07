@@ -5,17 +5,15 @@ import ApiiData from './Component/ApiiData';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 
 import Footer from './Footer/Footer';
+import Popup from './Component/Popup';
 const App = () => {
   return (
     <div>
- 
+   
       <Navbar/>
       <Routee/>
-      
       <ApiiData/>
-     
-      
-     
+      <Popup/>
       <Footer/>
 
     </div>

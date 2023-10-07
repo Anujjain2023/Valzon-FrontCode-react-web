@@ -15,7 +15,7 @@ import HouseCleaning from './ProductCategory/HouseCleaning'
 import Pooja from './ProductCategory/Pooja'
 import Welness from './ProductCategory/Welness'
 import Video from './NavComponent/Video'
-
+import Cart from './NavComponent/Cart'
 
 const Routee = () => {
   return (
@@ -26,16 +26,15 @@ const Routee = () => {
        <Route path='/brand' element = {<Brand/>} />
        <Route path="/product" element = {<Product/>} />
        <Route path="/company" element = {<Company/>} />
-       <Route path="/galary/" element = {<Galary/>}> 
-       <Route path='vid' element = {<Video/>} />
-       </Route>
-
-      
+       <Route path="/galary" element = {<Galary/>}/> 
+       <Route path='/vid' element = {<Video/>} />
        <Route path="/news" element = {<News/>} />
        <Route path="/sign/" element = {<Signup/>} >
+
        <Route path='login' element = {<Login/>} />
        </Route>
        
+       <Route path='/cart' element={<Cart/>}/>
        <Route path='/personalcare' element = {<Personalcare/>} />
        <Route path='/kitchen' element = {<Kitchen/>} />
        <Route path='/housecleaning' element = {<HouseCleaning/>} />
