@@ -7,6 +7,7 @@ import N4 from "../Component/assets/n4.png"
 import N5 from "../Component/assets/n5.png"
 
 import "../Style/Home.css"
+
 import "../Style/Slide.css"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
