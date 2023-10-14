@@ -12,7 +12,6 @@ const App = () => {
    
       <Navbar/>
       <Routee/>
-      <ApiiData/>
       <Popup/>
       <Footer/>
 

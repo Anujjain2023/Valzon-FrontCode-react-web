@@ -1,0 +1,49 @@
+.log-in-form{
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  box-shadow: 1px 1px 5px #808080;
+  padding : 2%;
+  margin:2% 35%;
+}
+.heading-text{
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 2em;
+  font-weight: bold;
+  align-items: center;
+  margin: 1%;
+}
+.full-size-input{
+  width: 90%;
+  outline: none;
+  border-radius: 20px;
+  padding: 2.5%;
+  margin: 2%;
+  border: 1px solid gray;
+  background-color: aliceblue;
+}
+.flex-using{
+  display: flex;
+  justify-content: space-around;
+}
+#loginbutton{
+  background-color: red;
+  color: white;
+  padding: 2.5% 4%;
+  font-weight: bold;
+  font-size: 1.3em;
+  border-radius: 20px;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+.dont-have-ac{
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+Link{
+text-decoration: none;
+}

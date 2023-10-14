@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "../Style/Reuse.css"
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import MyContext from '../Context/ParentContext';
 
 const Reuse = (props) => {
-  const [cartd,Setcartd] = useState()
+ const  myContext =  useContext(MyContext)
+  const [cartData,SetCartData] = useState()
   console.log(props.price);
   const cartBtnClick=()=>{
-     
+      myContext.updateCart(props)
   }
   return (
     <div className='re-main'>

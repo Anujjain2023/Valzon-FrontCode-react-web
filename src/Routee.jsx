@@ -29,11 +29,8 @@ const Routee = () => {
        <Route path="/galary" element = {<Galary/>}/> 
        <Route path='/vid' element = {<Video/>} />
        <Route path="/news" element = {<News/>} />
-       <Route path="/sign/" element = {<Signup/>} >
-
-       <Route path='login' element = {<Login/>} />
-       </Route>
-       
+       <Route path="/signUp/" element = {<Signup/>} />
+       <Route path='login' element = {<Login/>} />      
        <Route path='/cart' element={<Cart/>}/>
        <Route path='/personalcare' element = {<Personalcare/>} />
        <Route path='/kitchen' element = {<Kitchen/>} />

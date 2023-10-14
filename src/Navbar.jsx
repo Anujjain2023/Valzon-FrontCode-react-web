@@ -3,8 +3,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom'
 import "./Style/Nav.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PersonIcon from '@mui/icons-material/Person';
-import SearchIcon from '@mui/icons-material/Search';
+import PersonIcon from '@mui/icons-material/Person';import SearchIcon from '@mui/icons-material/Search';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Vlogo from "./Component/assets/Vlogo.png"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -18,7 +17,6 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(true)
   const navigate = useNavigate()
@@ -63,8 +61,8 @@ const Navbar = () => {
   }
 
 
-  const loginpage = () => {
-    navigate("/")
+  const userCick = () => {
+    navigate("/login")
   }
   const signpage = () => {
 
@@ -97,50 +95,26 @@ const Navbar = () => {
     <>
       <div className='for-media-search'>
       <div className='up-main'>
-
-
-       <div className='toggle' onClick={toggleClick}> <DehazeIcon/>
-       <span className={toggle?"user-ul":"user-ul-show"}>
-       <li>
-        <span>New Customer?  </span>
-        <span style={{color:"#13ACA7"}}>   Sign UP</span>
-       </li>
-       <li> 
-       <PersonIcon />
-        <span>My Profile</span>
-       </li>
-       <li> 
-        <BorderOuterIcon/>
-        <span>Order</span>
-       </li>
-       <li> 
-       <FavoriteBorderIcon/>
-        <span>WishList</span>
-       </li>
-       <li> 
-       <InventoryIcon/>
-       <span>Reward</span>
-      </li>
-     </span>
-       </div>
+       <div>
+       <div className="toggle" onClick={toggleClick}> <DehazeIcon/></div> 
         <div className='left-nav-img'> <img className='imgg' src={Vlogo} width={"100%"} />
-
+        </div>
         </div>
         <div className='out-inp'>
-          <div className='inp'>
+          <div className='search-box-top'>
             <SearchIcon onClick={searchClick} />
             <input type='text' placeholder="Search For Products" /> 
           </div>
           <div className='right-icon-user'>
             <span className='icon-user'>
-            <PersonIcon />
+            <PersonIcon className="large-icon" onClick={userCick} />
 
           <NavDropdown
               id="nav-dropdown-dark-example"
               title="User"
               menuVariant="light"
               >
-              <NavDropdown.Item href="#action/3.1">  <PersonIcon /> My Profile</NavDropdown.Item>
+              <NavDropdown.Item  href="#action/3.1">  <PersonIcon /> My Profile</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
               <BorderOuterIcon/> Order
               </NavDropdown.Item>
@@ -152,7 +126,7 @@ const Navbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
               </span>
-              <span  onClick={cartClickk} className='icon-user'> <ShoppingCartIcon />  Cart</span>
+              <span  onClick={cartClickk} className='icon-user'> <ShoppingCartIcon className="large-icon" />  Cart</span>
            <span className='t3dots-icon'><MoreVertIcon/></span> 
           </div>
         </div>
@@ -164,33 +138,54 @@ const Navbar = () => {
       <input type='text' placeholder="Search For Products" /> 
     </div>
     </div>
-
+    <span className={toggle?"user-ul":"user-ul-show"}>
+    <li>
+     <span>New Customer?  </span>
+     <span style={{color:"#13ACA7"}}>   Sign UP</span>
+    </li>
+    <li > 
+    <PersonIcon />
+     <span>My Profile</span>
+    </li>
+    <li> 
+     <BorderOuterIcon/>
+     <span>Order</span>
+    </li>
+    <li> 
+    <FavoriteBorderIcon/>
+     <span>WishList</span>
+    </li>
+    <li> 
+    <InventoryIcon/>
+    <span>Reward</span>
+   </li>
+  </span>
       <div className='main'>
         
         <div className="nav-main" >
 
 
-          <div className='nav-prd' onClick={NavBrand}>
+          <div className='nav-prd' onClick={kitchencare}>
            <div ><img src={grocery} />
           </div><span> Kitchen care </span>
           </div>
 
-          <div className='nav-prd' onClick={NavCompany}>
+          <div className='nav-prd' onClick={housecleaning}>
           <div ><img src={hcare} />
           </div><span>Home Care</span> 
           </div>
 
-          <div className='nav-prd' onClick={NavNews}>
+          <div className='nav-prd' onClick={personalcare}>
           <div ><img src={pcare} />
           </div> <span>Personal Care </span>
           </div>
 
-          <div className='nav-prd' onClick={NavGalary}>
+          <div className='nav-prd' onClick={poojaneed}>
           <div ><img src={pooja} />
            </div><span>Pooja Need</span>
           </div>
 
-          <div className='nav-prd' onClick={NavCon}>
+          <div className='nav-prd' onClick={wellnessproduct}>
           <div ><img src={wellness} />
           </div> <span >Wellness</span>
           </div>

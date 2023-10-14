@@ -18,7 +18,7 @@ import h5 from "../Component/assets/g1.jpg";
 const SliderComponent = () => {
    
   const [currentSlide, setCurrentSlide] = useState(0);
-     const Slides = [
+    const Slides = [
       { bimg:h1,
         img:N1,
         text:"Saunf Seeds",
@@ -41,7 +41,7 @@ const SliderComponent = () => {
         img:N4,
         text:"Arjun Chhal",
         
-        para: "its beneficial effect on heart function and cardiovascular health. boosts immunity, improves digestion, and promotes weight loss."
+        para: "Its beneficial effect on heart function and cardiovascular health. boosts immunity, improves digestion, and promotes weight loss."
       },
       {bimg:h5,
         img:N5,

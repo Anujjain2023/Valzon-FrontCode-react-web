@@ -42,18 +42,22 @@ z-index: 2;
 }
 .footer-main{
     background-color: #0E2C50;
-    /* font-family:   "Helvetica"; */
+    width: 100%;
+    padding: 2% 2px;
+    font-family: "sans serif like Thesans";
+    font-family:   "Helvetica";
     font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
+
 .first-li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
 }
 
 .li-blok-using-media-qu{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 li:hover{
     transform: 0.6s;

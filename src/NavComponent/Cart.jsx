@@ -6,6 +6,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CustomScroll from 'react-custom-scroll';
 
 const Cart = () => {
+  
   return (
     <>
       <div className='back-to-shop'>
@@ -15,24 +16,24 @@ const Cart = () => {
       <hr />
 
       <div className='heading-shop'>Shopping Cart</div>
-      <div> You Have items in the cart</div>
 
       <div className='cart-main'>
 
-        <CustomScroll>
+         <CustomScroll>
+        <p className='heading-shop-p'> You Have items in the cart</p>
+
           <div className='item-main'>
 
             <div className='item-img'>
               <img src='' />
             </div>
             
-            <h3>Name</h3>
+            <h4>Name</h4>
             <div className='Product'>
               <AddIcon />
-              <input type='text' id="quantity" />
               <RemoveIcon />
             </div>
-
+            <div className='quantity'>Quantity</div>
             <div className='price'>
               2000/- 
             </div>
@@ -41,14 +42,14 @@ const Cart = () => {
 
           </div>
         </CustomScroll>
-      </div>
+     
       <div className='pay'>
         <span >Total Payment</span> =
-        <span>20000/-</span> <br /> <br />
+        <span>2000/-</span> <br /> <br />
 
-        <span className='pay-btn'>Pay Now</span>
+        <span className='place-order'>PLACE ORDER</span>
       </div>
-
+      </div>
     </>
   )
 }

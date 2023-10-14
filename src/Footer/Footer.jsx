@@ -43,32 +43,30 @@ const Footer = () => {
 
                 <div className='first-li'>
                     <div className='li-blok-using-media-qu'>
-                        <ul> <h3>CATEGORIES</h3>
+                        <ul> <h4>CATEGORIES</h4>
 
                             <li>Kitchen Care Products </li>
                             <li>Wellness Product </li>
                             <li>House Cleaning Proceducts</li>
                             <li>Pooja Needs</li>
                             <li>Personal Care</li>
-                            <h3>Call Us</h3>
-                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center" }}><PermPhoneMsgIcon /> 9111777280 </li>
-                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center" }}><AccessAlarmIcon /> Hours:10:00 - 07:00, Mon - Fri</li>
-                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center" }}><AttachEmailIcon />  valzonindia@gmail.com</li>
+                            <br/>
+                            <h4>Call Us</h4>
+                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center", width:"110%"}}><PermPhoneMsgIcon /> 9111777280 </li><br/>
+                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center", width:"110%" }}><AccessAlarmIcon /> Hours:10:00 - 07:00, Mon - Fri</li><br/>
+                            <li style={{ display: "flex", flexDirection: "row", alignItems: "center", width:"110%" }}><AttachEmailIcon />  valzonindia@gmail.com</li>
 
                         </ul>
 
 
 
 
-                        <ul> <h3>MY ACCOUNT</h3>
+                        <ul> <h4>MY ACCOUNT</h4>
 
                             <li>Log in </li>
                             <li>Register </li>
-
-
-
-
-                            <h3>POLICY</h3>
+                            <br/>
+                            <h4>POLICY</h4>
 
                             <li>Compliance Documents </li>
                             <li>Product Return Policy </li>
@@ -87,7 +85,7 @@ const Footer = () => {
                             <div className='li-blok-using-media-qu2'>
 
 
-                                <h3 className="map-h2">Come Visit Us At Our Campus</h3>
+                                <h4 className="map-h2">Come Visit Us At Our Campus</h4>
                                 <div><AddLocationAltIcon /> ESavari
                                     4th Floor 18, Gulab Bagh near <br />Metro Mall, Dewas Naka, Gulab Bagh <br />Colony, Indore, Madhya Pradesh 452010</div>
                                 <br />

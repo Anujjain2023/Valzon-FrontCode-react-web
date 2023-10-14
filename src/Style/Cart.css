@@ -2,24 +2,29 @@
     display: flex;
    align-items: center;
    padding: 1% 2%;
-
+   font-size: 1.3em;
 }
 .heading-shop{
     padding: 1% 2%;
     font-size: 2em;
+    font-weight: bold;
 }
-.heading-shop div{
-    padding: 1% 2%;
+.heading-shop-p{
+    padding: 1%;
+    font-size: 2em;
 }
+
 .cart-main{
-    background-color: aliceblue;
-    width: 80%;
-    margin: 5% 10%;
+    background-color: white;
+    width: 90%;
+    margin: 5%;
 }
 .item-main{
     display: flex;
+    background-color: aliceblue;
     justify-content: space-between;
-    width: 70%;
+    align-items: center;
+    width: 80%;
     margin: 5% 10%;
     padding: 5%;
     border-radius: 10px;
@@ -38,7 +43,7 @@
     color: white ;
     border: none;
     border-radius: 5px;
-    padding: 3% 2%;
+    padding: 1% 2%;
     cursor: pointer;
 }
 .remove:hover{
@@ -48,8 +53,14 @@
     width: 30%;
     margin-left : 70%
 }
-.pay-btn{
-    background-color: aquamarine;
+.pay span{
+    font-size: 1.5em;
+}
+.place-order{
+    background-color: #FB641B;
     border: none;
-    padding: 3% 5%;
+    padding: 3% 7%;
+    color: white;
+    margin: 2%;
+    cursor: pointer;
 }
